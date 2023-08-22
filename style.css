@@ -1,0 +1,49 @@
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding:20px;
+    flex:1;
+    max-width: 600px;
+    height: 700px;
+    border:black solid 2px
+}
+.players{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    font: 1.5rem bold ;
+    height: 4rem;
+    border-bottom: 5px solid green;
+    border-bottom-right-radius:40% ;
+    transition: 0.5s;
+}
+
+.player2{
+    border-bottom: 5px solid red;
+    border-bottom-left-radius: 40% ;
+    border-bottom-right-radius:0 ;
+}
+.game{
+    padding:30px;
+    margin-top: 20px;
+    height: calc(100% - (4rem + 20px));
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+.block{
+    border:5px solid blue;
+    text-align: center;
+    font-size:8rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
